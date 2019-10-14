@@ -1,0 +1,7 @@
+ <h1>{{titre}}</h1>
+ <br>Donner un premier nombre<input type="text" #case1 (keyup)="onClick($event)">
+ <br>Le carré est: {{carre}}
+ <br>Donne un deuxième nombre<input #case2 type="text" >
+ <br>
+ <button (click)="onSomme(case1.value,case2.value)" [disabled]="case1.value==''|| case2.value==''">Somme</button>
+ Somme: {{s}}
